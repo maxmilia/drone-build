@@ -6,4 +6,6 @@ steps:
 - name: test
   image: golang:1.13
   commands:
+  - export GO111MODULE=on
+  - go tidy
   - go build
